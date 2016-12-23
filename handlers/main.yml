@@ -1,9 +1,9 @@
 ---
+- name: restart supervisor
+  service: name=supervisor state=restarted
+
 - name: restart elastalert
   supervisorctl:
     name: elastalert
     state: restarted
-
-- name: restart supervisor
-  service: name=supervisor state=restarted
 
