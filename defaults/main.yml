@@ -4,3 +4,7 @@ elastalert_git_repo: https://github.com/Yelp/elastalert.git
 elastalert_version: v0.1.4
 elastalert_elasticsearch_host: localhost
 elastalert_elasticsearch_port: 9200
+elastalert_rule_file_path: ""
+
+#elastalert_config_various:
+#  - slack_webhook_url: "alma"

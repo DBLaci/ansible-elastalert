@@ -13,3 +13,7 @@ writeback_index: elastalert_status
 alert_time_limit:
   days: 2
 max_query_size: 10000
+
+{% if elastalert_config_various != '' %}
+{{ elastalert_config_various | to_nice_yaml }}
+{% endif %}
