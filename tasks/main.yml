@@ -93,7 +93,7 @@
     dest: "/etc/elastalert/rules/"
     delete: yes
     use_ssh_args: yes
-  when: "{{ elastalert_rule_file_path != '' }}"
+  when: "elastalert_rule_file_path != ''"
   notify: restart elastalert
 
 - name: Process config template
